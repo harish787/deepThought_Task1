@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought</title>
+    <link href="../CSS/index.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <section class="wrapper">
+         <div class="navbar">
+            <div class="left">
+                <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="DT logo" />
+
+            </div>
+            <div class="right">
+                <div class="home-logo"><span class="material-symbols-outlined">
+                        house
+                    </span></div>
+                <div class="tools-logo"><span class="material-symbols-outlined">
+                        construction
+                    </span></div>
+                <div class="notification-logo"><span class="material-symbols-outlined">
+                        notifications
+                    </span></div>
+                <div class="profile-logo"><span class="material-symbols-outlined">
+                        person
+                    </span></div>
+                <div class="three-dots"><span class="material-symbols-outlined">
+                        more_vert
+                    </span></div>
+            </div>
+        </div>
+         <div class="journey-board">
+            <div class="head">
+                <div class="name">Journey Board</div>
+                <button onclick=handleNotice()><img class="arrow-image"
+                        src="https://s3-alpha-sig.figma.com/img/fe6e/4937/e192363bc8a2c9c39ade7f24e1906488?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fIE1qJ2PnsYDo1SpxV19ieQ90TGHMxI7PF1~qC3oWbCBU48H6hmyAfU33z5VhATKHDysHRvnC4scBEGfRPIQf3hEY3Qd~0QhdpheMJoYoVOx16hhjkyc~G8uRS1h329IgTDFFoOvIs8DV9BDXmn0gfuSPKpKPqDq~2~PBSxSXLOGZFlecg4Y~lo8~P1NEIi16ICGX7Hss2DMMEmiBNQOT~8s5hwB763H6u3G5aljTYvPUn6M7H5Bq4bcDMpQHnm2o6DH~veY68Pn5TFJBxSDPkli-f2ToL2fa1mEjImUk~CtscARbEWuSkLoLtBgCuMV~iAz9VEZatgy3qe-2gRSrQ__"
+                        alt="arrow" />
+                </button>
+            </div>
+            <div class="list">
+                <ul class="list-data">
+
+                </ul>
+            </div>
+        </div>   
+        <div class="tpm">
+            <div class="main-heading">
+                <h2></h2>
+                <button onclick=handleSubmit() class="btn">Submit Task</button>
+            </div>
+             <div class="ewm-desc">
+                <h3></h3>
+                <p>
+
+                </p>
+            </div>
+            <div class="assets">
+                <div class="atpm container">
+                    <div class="heading">
+                        <h3 class="asset-heading"></h3><span>i</span>
+                    </div>
+
+                    <div class="description"><span>Description: </span>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/TiMRwri1xJ8" allowfullscreen
+                            height="291"></iframe> 
+                    </div>
+                </div>
+                <div class="threadbuild container">
+                    <div class="heading">
+                        <h3 class="asset-heading"></h3><span>i</span>
+                    </div>
+                    <div class="description"><span>Description: </span>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="threadA">
+                        <button onclick=handleThreadExpand() class="expandBtn">
+                            ^ </button>
+                        <span>Thread A</span>
+
+                    </div>
+
+                    <div class="subThreads">
+                        <div class="subs">
+                            <div class="st1">
+                                <h3>Sub Thread 1</h3>
+                                <textarea type="text" placeholder="Enter Text Here"></textarea>
+                            </div>
+                            <div class="si1">
+                                <h3>Sub Interpretation 1</h3>
+                                <textarea type="text" placeholder="Enter Text Here"></textarea>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span class="material-symbols-outlined">
+                                lightbulb
+                            </span>
+
+                            <span class="material-symbols-outlined">
+                                comment
+                            </span>
+                            <span class="material-symbols-outlined">
+                                live_help
+                            </span>
+                            <span class="material-symbols-outlined">
+                                spa
+                            </span>
+                            <select>
+                                select category
+                                <option value="category1">select categ</option>
+                                <option value="category1">category1</option>
+                                <option value="category2">category2</option>
+                                <option value="category4">category3</option>
+                                <option value="category4">category4</option>
+
+                            </select>
+                            <select>
+                                <option>select process</option>
+                                <option>process1</option>
+                                <option>process2</option>
+                                <option>
+                                    process3
+                                </option>
+                                <option>process4</option>
+                            </select>
+                        </div>
+
+                        <button class="btn">+ Sub thread</button>
+
+                        <div class="sfta">
+                            <h3>Summary for Thread A</h3>
+                            <textarea type="text" placeholder="Enter Text Here"></textarea>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="syp container">
+                    <div class="heading">
+                        <h3 class="asset-heading"></h3><span>i</span>
+                    </div>
+                    <div class="description"><span>Description: </span>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="title">
+                        <h5>
+                            Title
+                        </h5>
+                        <input type="text" />
+                    </div>
+                    <div class="content">
+                        <h5>Content</h5>
+                        <div class="box">
+                            <div class="options">
+                                <span>
+                                    File
+                                </span>
+                                <span>
+                                    Edit
+                                </span>
+                                <span>View</span>
+                                <span>Insert</span>
+                                <span>Format</span>
+                                <span>Tools</span>
+                                <span>Table</span>
+
+                                <span>Help</span>
+                                <span class="material-symbols-outlined">
+                                    turn_left
+                                </span><span class="material-symbols-outlined">
+                                    turn_right
+                                </span>
+                                <span class="material-symbols-outlined" id="cross">
+                                    open_with
+                                </span>
+                                <span id="para">
+                                    paragraph
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <textarea type="text">
+
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="sam container">
+                    <div class="heading">
+                        <h3 class="asset-heading"></h3><span>i</span>
+                    </div>
+                    <div class="description"><span>Description: </span>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="methods">
+                        <div class="intro">
+
+
+                            <button onclick=handleIntroExpand() class="expandBtn">^</button>
+                            <h3>Introduction
+                            </h3>
+                        </div>
+                        <div id="introduction">
+                            <p id="sa-para">The 4SA Method , How to bring a idea into progress ?</p>
+                            <p id="semore1">See More</p>
+
+                            <div class="threadA">
+                                <div class="head"> <button onclick=handleThreadA() class="expandBtn">^</button>
+                                    <h3>
+                                        Thread A
+                                    </h3>
+                                </div>
+                                <div class="subThreadA">
+                                    <p id="t-para">
+                                        How are you going to develop your stratergy ? Which method are you going to use
+                                        to
+                                        develop a stratergy ? What if the project is lengthy?
+                                    </p>
+                                    <p id="seemore2">See More</p>
+                                    <div class="examples">
+                                        <div class="example1">
+                                            <h4>
+                                                Example 1
+                                            </h4>
+                                            <p>You have a concept, How will you put into progress?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="help">
+            <img
+                src="https://s3-alpha-sig.figma.com/img/5b31/c50e/1a61e9875a4e31e0b5da40fe87694dd9?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YSs7QenxerkY3AqHt1g9IdAnfm2Gw4KDc6qyaJGlrTChET1ngZcNCAEQEzzBg990FSf0fhaQtjmaFN0DuX4BKxYMfqWaix7ueJL5fLH4fl5aOU38qNpMOinbUr3sBW9X1B0VaaaNsso0kMtaiX6dIXf6NvKupnCzF2diu7A-5BsO5c9GlocACwEsDnKyBGPJUPYQwBiPX-0SFnD~aBr5e0oZotS-g5U7r-iOOUDWtUsgDq3Y74w~LiHjjkG3rT2plfqq74QUjBbrh59R1w3kVacunsjWQ2wUESa0ihOOXbleY7-likTRCr143VwFG1Lx0Z4gr~UNQOSoRFVi6RskkA__" />
+            <img
+                src="https://s3-alpha-sig.figma.com/img/22ae/6e6c/9b8abad7a9c8d241fd0ab9eb6a9f95b5?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aj4PVNjp~WhDsp6cnsdAJu0LvrMbxR3yAokeZqArAM0JD~LVTwP~UALY3G89oa-QrWBvbJcR~rI6zyhqciIBhIJwRNOWhwVaRVQz28NFqwcPzTjwGyHQyeTNAQRyoDhglUjWxmn2r4vwaKxaKbb2MYXRbAH7ihArjLH5sSDQmbpbBA5SsZPiR24ZIqBRavuRi8hIZQAXZII45K3FQ3T-yZCRoXEesitwqsugwpq4c3mH1VAZckDJGy7NndcLkVEh8smoiJGXSUdRXw5IYKletLbiLs1d1B8IEWPLy5Byn1ofPHKg4wp5ic8AoHRe4C7J0cx06HbUxn40OwDU4bXjwQ__" />
+            <img
+                src="https://s3-alpha-sig.figma.com/img/1438/def8/3870fdb52d83bb903bb6574487be8860?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IyICRB05~8Vh~akC643S8s~OK16gvYQdhr0c54hORxKSgrKULPNmZpDlqv6JPS3b7UwYS2AsQQcadjiXZQz7bfnwnAcCN3tZSKEHuc5OE08y1rcN5uEfuGUa5CmuaacG8~n36kIdC9SWhx08VhRMc3HQ-7HyYN63iKJcNbk6NKdQtuymN7V2lrbrv81GNEravLMl2GaTzKpNtk2Hw3isDNeW10G91rjOdy2sGOnrE6VG-SHswBntgMHEe0FATMsIOerOHe1ecy245eLeltmD28FhDa9njwT~pzoB3GOHtTPxVRTfAkKE7bYcKkB6yfwNgToSpWvwuKaJYreaEccksQ__" />
+        </div> 
+    </section>
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>
